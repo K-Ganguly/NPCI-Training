@@ -15,5 +15,6 @@ public class java_basics {
             System.out.println(num2 + " is a multiple of " + num1 + " = " + multiples + "s of " + num1);
         else 
             System.out.println(num2 + " is neither a square nor multiple of " + num1);
+        sc.close();
     }
 }

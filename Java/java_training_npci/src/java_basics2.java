@@ -13,6 +13,7 @@ public class java_basics2 {
             System.out.printf("result = %d, %d", numDigits, (int)Math.pow(numDigits, 3));
         else 
             System.out.printf("result = %d [%d], %d", numDigits, (numDigits - 1), (int)Math.pow((numDigits - 1), 2));
+        sc.close();
     }
     
 }

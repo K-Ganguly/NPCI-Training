@@ -36,5 +36,6 @@ public class java_basics3 {
                 System.out.println("Type : long");
             }
         }
+        sc.close();
     }
 }
