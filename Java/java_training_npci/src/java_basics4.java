@@ -22,7 +22,5 @@ public class java_basics4 {
         }
         System.out.println();
         sc.close();
-
-    }
-    
+    }   
 }
