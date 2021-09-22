@@ -16,10 +16,8 @@ public class java_basics3 {
 
         if (isPoint) {
             double numVal = Double.parseDouble(num);
-            Double makeNull = null;
             if (numVal >= Float.MIN_VALUE && numVal <= Float.MAX_VALUE){
                 float val = (float)numVal;
-                numVal = makeNull;
                 System.out.printf("Type of %f is : <float>", val);
             }
             else {
@@ -28,20 +26,16 @@ public class java_basics3 {
         }
         else {
             long numVal = Long.parseLong(num);
-            Long makeNull = null;
             if (numVal >= Byte.MIN_VALUE && numVal <= Byte.MAX_VALUE){
                 byte val = (byte)numVal;
-                numVal = makeNull;
                 System.out.printf("Type of %d is : <byte>", val);
             }
             else if (numVal >= Short.MIN_VALUE && numVal <= Short.MAX_VALUE){
                 short val = (byte)numVal;
-                numVal = makeNull;
                 System.out.printf("Type of %d is : <short>", val);
             }
             else if (numVal >= Integer.MIN_VALUE && numVal <= Integer.MAX_VALUE){
                 int val = (byte)numVal;
-                numVal = makeNull;
                 System.out.printf("Type of %d is : <int>", val);
             }
             else {
