@@ -5,17 +5,20 @@ public class java_basics7 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the height of the tower : ");
         int h = sc.nextInt(); 
-        int value = 1, increase = 0;
+        int value = 1, increase = 0, d = h;
         for (int i = 1; i <= h; i++){
-            int space = h;
-            while (space-- > 0)
+            int space = d;
+            while (--space > 0)
                 System.out.print(" ");
-            for (int j = 1; j <= i; j++){
-                System.out.print(value);
+            for (int j = 0; j < i; j++){
+                System.out.print(value + " ");
                 increase += value;
             }
-            value += increase;
-            h--;
+            if (value == 1)
+                value = 2;
+            else
+                value = increase;
+            d--;
             System.out.println();  
         }
         sc.close();
