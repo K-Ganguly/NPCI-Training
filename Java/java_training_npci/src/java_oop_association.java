@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -50,11 +49,11 @@ class Project {
         return cost;
     }
 
-    void displayProjectDetails(){
+    void displayProjectDetails() {
         float projectCost = getProjectCost();
         System.out.println("Project Cost : " + projectCost);
         System.out.println("Project Manager : " + pm.emp_salary);
-        System.out.println("Number of Developers : " + dev.length); 
+        System.out.println("Number of Developers : " + dev.length);
         System.out.printf("Developer Salary : %f * %d = %f \n", dev[0].emp_salary, dev.length, (dev[0].emp_salary * dev.length));
         System.out.println("Maintenance Cost : " + maintenanceCost);
         System.out.println("Infrastructure Cost : " + infrastructureCost);

@@ -10,25 +10,24 @@ public class java_basics6 {
         System.out.println("Enter the elements of the matrix : ");
         int dir = 1;
         int[][] matrix = new int[row][col];
-        for (int i = 0; i < row; i++){
-            if (Math.pow(-1, dir++) == -1){
-                for (int j = 0; j < col; j++){
+        for (int i = 0; i < row; i++) {
+            if (Math.pow(-1, dir++) == -1) {
+                for (int j = 0; j < col; j++) {
                     matrix[i][j] = sc.nextInt();
                 }
-            }
-            else {
+            } else {
                 for (int j = col - 1; j >= 0; j--)
                     matrix[i][j] = sc.nextInt();
             }
             sc.nextLine();
         }
         System.out.println("\nDisplaying the matrix : ");
-        for (int[] rowOfMatrix : matrix ){
-            for (int element : rowOfMatrix)
+        for (int[] rowOfMatrix: matrix) {
+            for (int element: rowOfMatrix)
                 System.out.print(element + "\t");
             System.out.println();
         }
         sc.close();
     }
-    
+
 }
