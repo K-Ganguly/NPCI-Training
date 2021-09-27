@@ -29,6 +29,13 @@ for i in range(num_students) :
             second_div.append(roll_no)
 
 print("Class Performance Details : ")
+print("Students who have failed : ")
+for stud in failed :
+    print(stud, end="\t")
+print("Students who will reappear : ")
+for stud in re_appear : 
+    print(stud, end="\t")
+print()
 print("Percentage of Students failed : ", (len(failed)/num_students) * 100)
 print("Percentage of Students reappearing : ", (len(re_appear)/num_students) * 100)
 print("Percentage of Students passed : ", (len(passed)/num_students) * 100)
