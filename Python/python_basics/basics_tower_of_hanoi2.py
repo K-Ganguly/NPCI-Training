@@ -63,14 +63,6 @@ for row in matrix :
 
 # Part 4 : Finding square of the matrix 
 print("\n\nPart 4  : ")
-sq_matrix = [[0 for _ in range(len(matrix[0]))]
-    for _ in range(len(matrix))]
-
-for i in range(len(matrix)):
-    for j in range(len(matrix[0])):
-        sq_matrix[i][j] = 0
-        for k in range(len(matrix)):                
-            sq_matrix[i][j] += matrix[i][k] * matrix[k][j]
-
 for row in matrix : 
-    print(row)
+    sq_row = list(map(lambda x : x ** 2, row))
+    print(sq_row)
