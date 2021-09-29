@@ -6,7 +6,7 @@ while entry != "exit" :
     entry = list(input("Enter the details of the person (enter 'exit' to stop) : ").split(","))
     if entry[0] == "exit" :
         break
-    if not (tuple(entry[:3]) in entry_set) : 
+    if len(entry) > 0 and not (tuple(entry[:3]) in entry_set) : 
         entries.append(entry)
         entry_set.add(tuple(entry[:3]))
 
