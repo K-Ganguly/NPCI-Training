@@ -70,3 +70,45 @@ projects.sort_project_users_by_salary()
 # Creating Dictionary of Sorted Projects
 project_dict = projects.create_project_dict()
 print(project_dict)
+
+### Output : 
+####        Add project details ? 
+####                Enter Y to continue        
+####                Enter anything else to stop
+####        ?       Y
+####        Enter the details of the project : 
+####        Enter the project id : 3242
+####        Enter the name of the project : easyPay
+####        Enter the details of the project users : (enter 'stop' when done
+####        Enter the user_id, user_name, user_salary : 2342432, akshay, 45000
+####        Enter the user_id, user_name, user_salary : 3242422, shreya, 35000
+####        Enter the user_id, user_name, user_salary : 3224322, payel, 43222
+####        Enter the user_id, user_name, user_salary : stop
+####        Add another project details ?   Enter Y to continue
+####                Enter anything else to stop : 
+####         Y
+####        Enter the details of the project : 
+####        Enter the project id : 324232
+####        Enter the name of the project : cryptoNex
+####        Enter the details of the project users : (enter 'stop' when done
+####        Enter the user_id, user_name, user_salary : 324232, kushal, 39000
+####        Enter the user_id, user_name, user_salary : 234232, shruti, 78000
+####        Enter the user_id, user_name, user_salary : 324312, neha, 34000
+####        Enter the user_id, user_name, user_salary : stop
+####        Add another project details ?   Enter Y to continue
+####        
+####        Project ID : 3242
+####        Project Name : easyPay
+####        Username :  akshay (Rs. 45000.0
+####        Username :  shreya (Rs. 35000.0
+####        Username :  payel (Rs. 43222.0
+####        
+####        
+####        Project ID : 324232
+####        Project Name : cryptoNex
+####        Project Users :
+####        Username :  kushal (Rs. 39000.0
+####        Username :  shruti (Rs. 78000.0
+####        Username :  neha (Rs. 34000.0
+####        
+####        {'3242': {' shreya': 35000.0, ' payel': 43222.0, ' akshay': 45000.0}, '324232': {' neha': 34000.0, ' kushal': 39000.0, ' shruti': 78000.0}}
